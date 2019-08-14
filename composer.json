@@ -3,8 +3,7 @@
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
-    "description": "This is a extension for loading the testimonials in a cms page with a very professional slider. 
-This is very easy to maintain with no conflict of jquery.",
+    "description": "This is a extension for loading the testimonials in a cms page with a very fine slide. ",
     "authors": [
     {
         "name": "Shweta Agarwal",

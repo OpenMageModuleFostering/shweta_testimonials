@@ -1,0 +1,81 @@
+<?php $enab=$this->getTestimonialsEnabled(); 
+if($enab==1) { ?>
+<?php $view=$this->getTestimonialsView(); 
+if($view==2) { ?>
+<?php $wid=$this->getTestimonialsImageWidth(); ?>
+<?php $hei=$this->getTestimonialsImageHeight(); ?>
+<?php $faceimg=$this->getTestimonialsImages(); ?>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+
+<script type="text/javascript" src="<?php echo $this->getJsUrl('jquery.cycle.all.latest.js') ?>"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+   $('#testimonials')
+	.cycle({
+        fx: 'fade', // choose your transition type, ex: fade, scrollUp, scrollRight, shuffle
+     });
+});
+</script>
+
+
+<style>
+#testimonials {
+width:630px;
+background:#E7E9E6 url(images/bg-testimonials.png) left top repeat-x;
+border:1px solid #D8D9D6;
+margin:10px 0;
+height:220px; 
+}
+#testimonials blockquote{
+padding:10px;
+width:600px !important;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-style:italic;
+color:#808080;
+display:block;
+}
+ 
+#testimonials blockquote p{
+margin: 0 !important;padding: 5px!important;
+float:right;
+width:195px;
+ 
+}
+#testimonials blockquote cite {
+font-style: normal;
+display: block;
+ 
+text-transform: uppercase;
+font-weight: bold;
+font-style:italic;
+color: #555;
+padding-left:5px;
+margin-top:10px;
+}
+</style>
+
+
+
+<?php $testi=$this->ShowTestimonialsRecords(); ?>
+
+<?php $result = $testi->fetchAll(); ?>
+<?php $img=Mage::getBaseUrl();
+$imgr=str_replace('/index.php', '', $img); ?>
+<div id="testimonials">
+<?php foreach($result as $values) { ?>
+
+<?php $img1= $values['pic']; ?>
+<blockquote><?php if($faceimg==1) { ?><img src="<?php echo $imgr.'media/'.$img1 ?>" width="<?php echo $wid; ?>" height="<?php echo $hei; ?>" /><?php } ?><p>
+<?php echo $values['message']; ?>
+<cite>&ndash;<?php echo $values['name']; ?></cite></p></blockquote>
+<?php } ?>
+</div><!--end testimonials-->
+<?php } ?>
+<?php } else {
+echo "For enable testimonials go to admin->system->configuration->shweta testimonials->setting->enable->yes";
+}
+?>
+
+
