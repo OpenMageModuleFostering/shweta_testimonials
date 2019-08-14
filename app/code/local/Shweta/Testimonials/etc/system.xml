@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <shweta translate="label" module="testimonials">
+            <label>Testimonials</label>
+            <sort_order>100</sort_order>
+        </shweta>
+    </tabs>
+    <sections>
+        <shweta translate="label" module="testimonials">
+            <label>Shweta testimonials</label>
+            <tab>shweta</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <shweta_group translate="label" module="testimonials">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <shweta_select translate="label">
+                            <label>Enable Testimonials </label>
+                            <comment>enable testimonials to your site Yes/No </comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </shweta_select>
+			<shweta_view translate="label">
+                            <label>View Testimonials </label>
+                            <comment>select testimonials to visible at</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>testimonials/words</source_model>
+                        </shweta_view>
+                        <shweta_width translate="label">
+                            <label>Image Width: </label>
+                            <comment><![CDATA[in px]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shweta_width>
+			<shweta_height translate="label">
+                            <label>Image Height: </label>
+                            <comment><![CDATA[in px]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </shweta_height>
+			<shweta_image translate="label">
+                            <label>Show face Images: </label>
+                            <comment>enable Images to your testimonials Yes/No </comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </shweta_image>
+                    </fields>
+                </shweta_group>
+            </groups>
+        </shweta>
+    </sections>
+</config>

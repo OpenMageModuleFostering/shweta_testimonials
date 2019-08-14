@@ -1,0 +1,17 @@
+{
+    "name": "OpenMageModuleFostering/shweta_testimonials",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "This is a extension for loading the testimonials in a cms page with a very professional slider. 
+This is very easy to maintain with no conflict of jquery.",
+    "authors": [
+    {
+        "name": "Shweta Agarwal",
+        "email": "shweta@ptiwebtech.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
