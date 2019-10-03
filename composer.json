@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/shweta_testimonials",
+    "name": "OpenMageModuleFostering\/shweta_testimonials",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "This is a extension for loading the testimonials in a cms page with a very fine slide. ",
     "authors": [
-    {
-        "name": "Shweta Agarwal",
-        "email": "shweta@ptiwebtech.com"
-    }
-],
+        {
+            "name": "Shweta Agarwal",
+            "email": "shweta@ptiwebtech.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
